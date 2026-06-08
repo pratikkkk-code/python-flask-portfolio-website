@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pratik Tawal Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Pratik Tawal</h1>
+
+        <h2>Python Developer</h2>
+
+        <p>
+            Engineering Student passionate about Python,
+            AI, Web Development and Problem Solving.
+        </p>
+
+        <h2>Skills</h2>
+
+        <ul>
+            <li>Python</li>
+            <li>Flask</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+
+        <h2>Projects</h2>
+
+        <ul>
+            <li>Calculator CLI App</li>
+            <li>To-Do List Application</li>
+            <li>News Headlines Web Scraper</li>
+            <li>REST API with Flask</li>
+        </ul>
+
+        <h2>Contact Me</h2>
+
+        <form method="POST">
+
+            <input type="text" name="name" placeholder="Enter Name" required>
+
+            <input type="email" name="email" placeholder="Enter Email" required>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <p>{{ message }}</p>
+
+    </div>
+
+</body>
+</html>
